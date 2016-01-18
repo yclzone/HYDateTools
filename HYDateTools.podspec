@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "HYDateTools"
   s.version          = "0.1.0"
-  s.summary          = "A short description of HYDateTools."
+  s.summary          = "HYDateTools is collection set of common used methods of NSDate and NSString that convert between date, date string and timeinterval."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+HYDateTools is collection set of common used methods of NSDate and NSString that convert between date, date string and timeinterval. It also include some userful methods to compare date.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/HYDateTools"
+  s.homepage         = "https://github.com/yclzone/HYDateTools"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "yclzone" => "yclzone@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/HYDateTools.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/yclzone/HYDateTools.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/yclzone'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
