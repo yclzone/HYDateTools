@@ -101,6 +101,27 @@
     return [formatedDate timeIntervalSince1970];
 }
 
++ (NSInteger)hy_timeintervalFromDate:(NSDate *)date type:(HYTimeintervalType)type {
+    switch (type) {
+        case HYTimeintervalTypeDefault:
+            return [date timeIntervalSince1970];
+        case HYTimeintervalTypeUpToMinute:
+            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd HH:mm"];
+        case HYTimeintervalTypeUpToHour:
+            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd HH"];
+        case HYTimeintervalTypeUpToDay:
+            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd"];
+        case HYTimeintervalTypeUpToMonth:
+            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM"];
+        case HYTimeintervalTypeUpToYear:
+            return [self hy_timeintervalFromDate:date withFormat:@"yyyy"];
+            
+        default:
+            return 0;
+            break;
+    }
+}
+
 #pragma mark - 日期计算
 - (NSDate *)hy_dateByAddingUnit:(NSCalendarUnit)unit
                           value:(NSInteger)value {
