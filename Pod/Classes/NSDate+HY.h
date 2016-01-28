@@ -52,7 +52,8 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 
 - (NSDate *)hy_previousUnit:(NSCalendarUnit)unit;
 
-
+- (NSDate *)hy_firstDay;
+- (NSDate *)hy_lastDay;
 
 /** 年份 */
 @property (nonatomic, assign, readonly) NSInteger hy_year;
@@ -76,4 +77,6 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 /** 本年第几周 */
 @property (nonatomic, assign, readonly) NSInteger hy_weekOfYear;
 //@property (nonatomic, assign, readonly) NSInteger hy_yearForWeekOfYear;
+
+
 @end

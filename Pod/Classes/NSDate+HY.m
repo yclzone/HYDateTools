@@ -144,6 +144,18 @@
     return [self hy_dateByAddingUnit:unit value:-1];
 }
 
+- (NSDate *)hy_firstDay {
+    NSTimeInterval monthStart = [NSDate hy_timeintervalFromDate:self type:HYTimeintervalTypeUpToMonth];
+    NSDate *firstDay = [NSDate dateWithTimeIntervalSince1970:monthStart];
+    return firstDay;
+}
+
+- (NSDate *)hy_lastDay {
+    NSDate *firstDay = [self hy_firstDay];
+    NSDate *nextMonthFirstDay = [firstDay hy_dateByAddingUnit:NSCalendarUnitMonth value:1];
+    NSDate *lastDay = [nextMonthFirstDay hy_dateByAddingUnit:NSCalendarUnitDay value:-1];
+    return lastDay;
+}
 
 #pragma mark - COMPS
 
