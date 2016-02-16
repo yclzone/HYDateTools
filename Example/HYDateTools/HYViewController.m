@@ -21,22 +21,36 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
-    [[NSDate date] hy_dateByAddingUnit:NSCalendarUnitDay
-                                 value:-7];
+//    [[NSDate date] hy_dateByAddingUnit:NSCalendarUnitDay
+//                                 value:-7];
+//    
+////    NSInteger year = [[NSDate date] hy_year];
+//    
+//    NSDate *date = [NSDate hy_dateFromString:@"2015-12-27" withFormat:@"yyyy-MM-dd"];
+//    
+//    NSLog(@"%zd-%zd-%zd %zd:%zd:%zd \n weekday:%zd \n weekOfMonth:%zd \n weekOfYear:%zd",
+//          date.hy_year, date.hy_month, date.hy_day,
+//          date.hy_hour, date.hy_minute, date.hy_second,
+//          date.hy_weekday,
+//          date.hy_weekOfMonth,
+//          date.hy_weekOfYear);
+//    
+//    
+//    [self fullMonthDays:date];
     
-//    NSInteger year = [[NSDate date] hy_year];
-    
-    NSDate *date = [NSDate hy_dateFromString:@"2015-12-27" withFormat:@"yyyy-MM-dd"];
-    
-    NSLog(@"%zd-%zd-%zd %zd:%zd:%zd \n weekday:%zd \n weekOfMonth:%zd \n weekOfYear:%zd",
-          date.hy_year, date.hy_month, date.hy_day,
-          date.hy_hour, date.hy_minute, date.hy_second,
-          date.hy_weekday,
-          date.hy_weekOfMonth,
-          date.hy_weekOfYear);
-    
-    
-    [self fullMonthDays:date];
+    NSInteger time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeDefault];
+    NSLog(@"%zd", time);
+    time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeUpToYear];
+    NSLog(@"%zd", time);
+    time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeUpToMonth];
+    NSLog(@"%zd", time);
+    time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeUpToDay];
+    NSLog(@"%zd", time);
+    time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeUpToHour];
+    NSLog(@"%zd", time);
+    time = [NSDate hy_timeintervalFromDate:[NSDate date] type:HYTimeintervalTypeUpToMinute];
+    NSLog(@"%zd", time);
+
 }
 
 - (void)didReceiveMemoryWarning

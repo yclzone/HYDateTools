@@ -102,24 +102,37 @@
 }
 
 + (NSInteger)hy_timeintervalFromDate:(NSDate *)date type:(HYTimeintervalType)type {
+    NSCalendarUnit unit = [self calendarUnitWithTimeintervalType:type];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *comp = [calendar components:unit fromDate:date];
+    NSDate *aDate = [calendar dateFromComponents:comp];
+    return [aDate timeIntervalSince1970];
+}
+
++ (NSCalendarUnit)calendarUnitWithTimeintervalType:(HYTimeintervalType)type {
+    NSCalendarUnit unit;
     switch (type) {
-        case HYTimeintervalTypeDefault:
-            return [date timeIntervalSince1970];
         case HYTimeintervalTypeUpToMinute:
-            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd HH:mm"];
+            unit = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute;
+            break;
         case HYTimeintervalTypeUpToHour:
-            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd HH"];
+            unit = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour;
+            break;
         case HYTimeintervalTypeUpToDay:
-            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM-dd"];
+            unit = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay;
+            break;
         case HYTimeintervalTypeUpToMonth:
-            return [self hy_timeintervalFromDate:date withFormat:@"yyyy-MM"];
+            unit = NSCalendarUnitYear|NSCalendarUnitMonth;
+            break;
         case HYTimeintervalTypeUpToYear:
-            return [self hy_timeintervalFromDate:date withFormat:@"yyyy"];
-            
+            unit = NSCalendarUnitYear;
+            break;
         default:
-            return 0;
+            unit = NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond;
             break;
     }
+    
+    return unit;
 }
 
 #pragma mark - 日期计算
