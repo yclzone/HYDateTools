@@ -79,7 +79,14 @@
 @implementation NSDate (HY)
 + (NSDate *)hy_dateFromString:(NSString *)string
                    withFormat:(NSString *)format {
-    NSDateFormatter *dateFormater = [NSDateFormatter new];
+    
+    static NSDateFormatter *dateFormater = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormater = [[NSDateFormatter alloc] init];
+    });
+    dateFormater.timeZone = [NSTimeZone systemTimeZone];
+    dateFormater.locale = [NSLocale autoupdatingCurrentLocale];
     dateFormater.dateFormat = format;
     return [dateFormater dateFromString:string];
 }
