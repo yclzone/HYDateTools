@@ -11,7 +11,7 @@
 #define NSStringFromInteger(integerValue) [NSString stringWithFormat:@"%zd", integerValue]
 #define NSStringFromFloat(format, floatValue) [NSString stringWithFormat:format, floatValue]
 
-#define NSStringFromTimestamp(timestamp, format) [NSString hy_stringFromTimeinterval:timestamp withFormat:format]
+#define NSStringFromTimestamp(timeinterval, format) [NSString hy_stringFromTimeinterval:timeinterval withFormat:format]
 #define NSStringFromDate(date, format) [NSString stringFromDate:date withFormat:format]
 //#define NSIntegerFromDateString(dateString, format) [NSString timeStampFromString:dateString withFormat:format]
 
