@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#define NSStringFromInteger(integerValue) [NSString stringWithFormat:@"%zd", integerValue]
+#define NSStringFromFloat(format, floatValue) [NSString stringWithFormat:format, floatValue]
+
+#define NSStringFromTimestamp(timestamp, format) [NSString hy_stringFromTimeinterval:timestamp withFormat:format]
+#define NSStringFromDate(date, format) [NSString stringFromDate:date withFormat:format]
+//#define NSIntegerFromDateString(dateString, format) [NSString timeStampFromString:dateString withFormat:format]
+
 @interface NSString (HY)
 
 + (NSString *)hy_stringFromDate:(NSDate *)date

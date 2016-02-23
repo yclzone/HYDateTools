@@ -177,6 +177,33 @@
     return lastDay;
 }
 
+#pragma mark - 日期比较
+- (BOOL)hy_isEarlierThan:(NSDate *)date {
+    return (self.timeIntervalSince1970 < date.timeIntervalSince1970);
+}
+
+- (BOOL)hy_isEarlierThanOrEqualTo:(NSDate *)date {
+    return (self.timeIntervalSince1970 <= date.timeIntervalSince1970);
+}
+
+- (BOOL)hy_isLaterThan:(NSDate *)date {
+    return (self.timeIntervalSince1970 > date.timeIntervalSince1970);
+}
+
+- (BOOL)hy_isLaterThanOrEqualTo:(NSDate *)date {
+    return (self.timeIntervalSince1970 >= date.timeIntervalSince1970);
+}
+
+- (BOOL)hy_isEarlierThan:(NSDate *)date1 andLaterThan:(NSDate *)date2 {
+    return ([self hy_isEarlierThan:date1] && [self hy_isLaterThan:date2]);
+}
+
+- (BOOL)hy_isEarlierThanOrEqualTo:(NSDate *)date1 andLaterThanOrEqualTo:(NSDate *)date2 {
+    return ([self hy_isEarlierThanOrEqualTo:date1] && [self hy_isLaterThanOrEqualTo:date2]);
+}
+
+//- (BOOL)hy_isSame
+
 #pragma mark - COMPS
 
 - (NSInteger)hy_valueForUnit:(NSCalendarUnit)unit {

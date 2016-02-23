@@ -42,6 +42,10 @@
           date.hy_weekday,
           date.hy_weekOfMonth,
           date.hy_weekOfYear);
+    
+    NSStringFromTimestamp(1000, @"yyyy");
+    NSStringFromInteger(100);
+    NSStringFromFloat(@"%.2f", 100.2);
 
 }
 

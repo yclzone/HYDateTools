@@ -55,6 +55,16 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 - (NSDate *)hy_firstDay;
 - (NSDate *)hy_lastDay;
 
+#pragma mark - 日期比较
+- (BOOL)hy_isEarlierThan:(NSDate *)date;
+- (BOOL)hy_isEarlierThanOrEqualTo:(NSDate *)date;
+
+- (BOOL)hy_isLaterThan:(NSDate *)date;
+- (BOOL)hy_isLaterThanOrEqualTo:(NSDate *)date;
+
+- (BOOL)hy_isEarlierThan:(NSDate *)date1 andLaterThan:(NSDate *)date2;
+- (BOOL)hy_isEarlierThanOrEqualTo:(NSDate *)date1 andLaterThanOrEqualTo:(NSDate *)date2;
+
 /** 年份 */
 @property (nonatomic, assign, readonly) NSInteger hy_year;
 /** 月份 */
