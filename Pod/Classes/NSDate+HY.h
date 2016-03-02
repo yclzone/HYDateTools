@@ -48,11 +48,29 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 - (NSDate *)hy_dateByAddingUnit:(NSCalendarUnit)unit
                           value:(NSInteger)value;
 
+- (NSDate *)hy_previousUnit:(NSCalendarUnit)unit;
 - (NSDate *)hy_nextUnit:(NSCalendarUnit)unit;
 
-- (NSDate *)hy_previousUnit:(NSCalendarUnit)unit;
+- (NSDate *)hy_previousDay;
+- (NSDate *)hy_previousMonth;
+- (NSDate *)hy_previousYear;
 
+- (NSDate *)hy_nextDay;
+- (NSDate *)hy_nextMonth;
+- (NSDate *)hy_nextYear;
+
+/**
+ *  当月第一天
+ *
+ *  @return 当月第一天
+ */
 - (NSDate *)hy_firstDay;
+
+/**
+ *  当月第一天
+ *
+ *  @return 当月第一天
+ */
 - (NSDate *)hy_lastDay;
 
 #pragma mark - 日期比较

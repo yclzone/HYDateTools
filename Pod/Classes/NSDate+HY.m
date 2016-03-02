@@ -164,6 +164,26 @@
     return [self hy_dateByAddingUnit:unit value:-1];
 }
 
+- (NSDate *)hy_previousDay {
+    return [self hy_previousUnit:NSCalendarUnitDay];
+}
+- (NSDate *)hy_previousMonth {
+    return [self hy_previousUnit:NSCalendarUnitMonth];
+}
+- (NSDate *)hy_previousYear {
+    return [self hy_previousUnit:NSCalendarUnitYear];
+}
+
+- (NSDate *)hy_nextDay {
+    return [self hy_nextUnit:NSCalendarUnitDay];
+}
+- (NSDate *)hy_nextMonth {
+    return [self hy_nextUnit:NSCalendarUnitMonth];
+}
+- (NSDate *)hy_nextYear {
+    return [self hy_nextUnit:NSCalendarUnitYear];
+}
+
 - (NSDate *)hy_firstDay {
     NSTimeInterval monthStart = [NSDate hy_timeintervalFromDate:self type:HYTimeintervalTypeUpToMonth];
     NSDate *firstDay = [NSDate dateWithTimeIntervalSince1970:monthStart];

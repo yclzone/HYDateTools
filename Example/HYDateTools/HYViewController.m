@@ -46,6 +46,20 @@
     NSStringFromTimestamp(1000, @"yyyy");
     NSStringFromInteger(100);
     NSStringFromFloat(@"%.2f", 100.2);
+    
+    NSDate *newDate = [date hy_nextDay];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    newDate = [newDate hy_nextMonth];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    newDate = [newDate hy_nextYear];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    newDate = [newDate hy_previousDay];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    newDate = [newDate hy_previousMonth];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    newDate = [newDate hy_previousYear];
+    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    
 
 }
 
