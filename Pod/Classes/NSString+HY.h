@@ -22,4 +22,6 @@
 
 + (NSString *)hy_stringFromTimeinterval:(NSInteger)timeinterval
                              withFormat:(NSString *)format;
+
++ (NSString *)hy_timeStampToUserInfoStr:(NSInteger)timeStamp;
 @end
