@@ -44,9 +44,9 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
                                 type:(HYTimeintervalType)type;
 
 /** 日期字符串 */
-@property (nonatomic, copy) NSString *hy_dateString;
+- (NSString *)hy_dateString;
 /** 时间字符串 */
-@property (nonatomic, strong) NSString *hy_timeString;
+- (NSString *)hy_timeString;
 
 
 #pragma mark - 日期计算
