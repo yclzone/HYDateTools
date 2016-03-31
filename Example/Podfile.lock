@@ -1,5 +1,5 @@
 PODS:
-  - HYDateTools (0.2.2)
+  - HYDateTools (0.4.0)
 
 DEPENDENCIES:
   - HYDateTools (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HYDateTools: b3de6618b4bec7c9682a910f23eda28cae980e4f
+  HYDateTools: c3265ff8c763cad483c0eec8d7db16dd4920e5f2
 
 COCOAPODS: 0.39.0

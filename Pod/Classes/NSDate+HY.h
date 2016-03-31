@@ -43,6 +43,11 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 + (NSInteger)hy_timeintervalFromDate:(NSDate *)date
                                 type:(HYTimeintervalType)type;
 
+/** 日期字符串 */
+@property (nonatomic, copy) NSString *hy_dateString;
+/** 时间字符串 */
+@property (nonatomic, strong) NSString *hy_timeString;
+
 
 #pragma mark - 日期计算
 - (NSDate *)hy_dateByAddingUnit:(NSCalendarUnit)unit
@@ -58,6 +63,7 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 - (NSDate *)hy_nextDay;
 - (NSDate *)hy_nextMonth;
 - (NSDate *)hy_nextYear;
+
 
 /**
  *  当月第一天

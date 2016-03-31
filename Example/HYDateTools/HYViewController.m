@@ -48,7 +48,7 @@
     NSStringFromFloat(@"%.2f", 100.2);
     
     NSDate *newDate = [date hy_nextDay];
-    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    NSLog(@"%@", newDate.hy_dateString);
     newDate = [newDate hy_nextMonth];
     NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
     newDate = [newDate hy_nextYear];

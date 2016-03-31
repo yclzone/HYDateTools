@@ -116,6 +116,14 @@
     return [aDate timeIntervalSince1970];
 }
 
+- (NSString *)hy_dateString {
+    return [NSString hy_stringFromDate:self withFormat:@"yyyy-MM-dd"];
+}
+
+- (NSString *)hy_timeString {
+    return [NSString hy_stringFromDate:self withFormat:@"yyyy-MM-dd HH:mm:ss"];
+}
+
 + (NSCalendarUnit)calendarUnitWithTimeintervalType:(HYTimeintervalType)type {
     NSCalendarUnit unit;
     switch (type) {
