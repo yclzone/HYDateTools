@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, HYTimeintervalType) {
-    HYTimeintervalTypeDefault = 0,
-    HYTimeintervalTypeUpToMinute,
-    HYTimeintervalTypeUpToHour,
-    HYTimeintervalTypeUpToDay,
-    HYTimeintervalTypeUpToMonth,
-    HYTimeintervalTypeUpToYear
-    
+typedef NS_ENUM(NSInteger, HYDateType) {
+    HYDateTypeDefault = 0,
+    HYDateTypeUpToMinute,
+    HYDateTypeUpToHour,
+    HYDateTypeUpToDay,
+    HYDateTypeUpToMonth,
+    HYDateTypeUpToYear
 };
 
 #define HYDateGetYear(timeinterval)     [NSDate dateWithTimeIntervalSince1970:(timeinterval)].hy_year
@@ -41,7 +40,11 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
                             withFormat:(NSString *)format;
 
 + (NSInteger)hy_timeintervalFromDate:(NSDate *)date
-                                type:(HYTimeintervalType)type;
+                                type:(HYDateType)type;
+
++ (NSInteger)hy_timeintervalFromTimeinterval:(NSInteger)timeinterval
+                                        type:(HYDateType)type;
+
 
 /** 日期字符串 */
 - (NSString *)hy_dateString;
@@ -63,6 +66,8 @@ typedef NS_ENUM(NSInteger, HYTimeintervalType) {
 - (NSDate *)hy_nextDay;
 - (NSDate *)hy_nextMonth;
 - (NSDate *)hy_nextYear;
+
+- (NSDate *)hy_dateWithType:(HYDateType)type;
 
 
 /**

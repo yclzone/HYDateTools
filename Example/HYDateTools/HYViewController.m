@@ -23,18 +23,20 @@
     
     NSDate *date = [NSDate date];
     
-    NSInteger time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeDefault];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToMinute];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToHour];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToDay];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToMonth];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    time = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToYear];
-    NSLog(@"%zd %@", time, [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    
+    
+    NSInteger time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeDefault];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeDefault], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToMinute];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeUpToMinute], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToHour];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeUpToHour], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToDay];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeUpToDay], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToMonth];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeUpToMonth], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    time = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToYear];
+    NSLog(@"%zd %zd %@", time, [NSDate hy_timeintervalFromTimeinterval:time type:HYDateTypeUpToYear], [NSString hy_stringFromTimeinterval:time withFormat:@"yyyy-MM-dd HH:mm:ss"]);
     
     NSLog(@"%zd-%zd-%zd %zd:%zd:%zd \n weekday:%zd \n weekOfMonth:%zd \n weekOfYear:%zd",
           date.hy_year, date.hy_month, date.hy_day,
@@ -103,7 +105,7 @@
 
 /** 当月第一天 */
 - (NSDate *)firstDayOfMonth:(NSDate *)date {
-    NSTimeInterval monthStart = [NSDate hy_timeintervalFromDate:date type:HYTimeintervalTypeUpToMonth];
+    NSTimeInterval monthStart = [NSDate hy_timeintervalFromDate:date type:HYDateTypeUpToMonth];
     NSDate *firstDay = [NSDate dateWithTimeIntervalSince1970:monthStart];
     return firstDay;
 }
