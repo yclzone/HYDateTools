@@ -205,7 +205,6 @@
     NSDate *firstDay = [NSDate dateWithTimeIntervalSince1970:monthStart];
     return firstDay;
 }
-
 - (NSDate *)hy_lastDay {
     NSDate *firstDay = [self hy_firstDay];
     NSDate *nextMonthFirstDay = [firstDay hy_dateByAddingUnit:NSCalendarUnitMonth value:1];

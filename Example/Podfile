@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'HYDateTools_Example', :exclusive => true do
-  pod "HYDateTools", :path => "../"
-end
-
-target 'HYDateTools_Tests', :exclusive => true do
+target 'HYDateTools_Example' do
   pod "HYDateTools", :path => "../"
 
-  
+  target 'HYDateTools_Tests' do
+  pod "HYDateTools", :path => "../"
+  end
 end
+
+

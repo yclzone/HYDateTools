@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2926F7631DE1D0B33A169B0D /* Pods_HYDateTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402CD2DDDBC6D34F24F21F71 /* Pods_HYDateTools_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		AFAC0B4A6164445D95D7530B /* Pods_HYDateTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3E52DC5DBF383963B05BE1 /* Pods_HYDateTools_Example.framework */; };
+		A76AAEB97A53F95194096EEC /* Pods_HYDateTools_Example_HYDateTools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECCD74B361AEDF5F73B850A /* Pods_HYDateTools_Example_HYDateTools_Tests.framework */; };
+		DD1B8992D715FC54F13BDFA0 /* Pods_HYDateTools_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02779A275D3199C32C10A9A8 /* Pods_HYDateTools_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		005D482BE336E32E7E6F7A8C /* Pods-HYDateTools_Example-HYDateTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example-HYDateTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example-HYDateTools_Tests/Pods-HYDateTools_Example-HYDateTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		02779A275D3199C32C10A9A8 /* Pods_HYDateTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYDateTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A64A8E74BA230FD1B84E5D5 /* Pods-HYDateTools_Example-HYDateTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example-HYDateTools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example-HYDateTools_Tests/Pods-HYDateTools_Example-HYDateTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		15D317B7A09BDAEFF8DB53D8 /* Pods-HYDateTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		22833B358B79F6DC68ED6970 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		23FB1DB9030E936B8FA6E52F /* Pods-HYDateTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Tests/Pods-HYDateTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		402CD2DDDBC6D34F24F21F71 /* Pods_HYDateTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYDateTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C8F395EF8453AE43339D4B8 /* Pods-HYDateTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5ECCD74B361AEDF5F73B850A /* Pods_HYDateTools_Example_HYDateTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYDateTools_Example_HYDateTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HYDateTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYDateTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,12 +61,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		609B60DC8C1E08A120C26530 /* Pods-HYDateTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		70A6757BEDF97D1FF93AA72F /* HYDateTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HYDateTools.podspec; path = ../HYDateTools.podspec; sourceTree = "<group>"; };
-		77EA8F372EE6BE5EC3B99236 /* Pods-HYDateTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AD9382F7482CFA1BC46EE1C1 /* Pods-HYDateTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYDateTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HYDateTools_Tests/Pods-HYDateTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AE44C5D90CAF5A3A430EE588 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EA3E52DC5DBF383963B05BE1 /* Pods_HYDateTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HYDateTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				AFAC0B4A6164445D95D7530B /* Pods_HYDateTools_Example.framework in Frameworks */,
+				DD1B8992D715FC54F13BDFA0 /* Pods_HYDateTools_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +86,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2926F7631DE1D0B33A169B0D /* Pods_HYDateTools_Tests.framework in Frameworks */,
+				A76AAEB97A53F95194096EEC /* Pods_HYDateTools_Example_HYDateTools_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4943EE8B8EA4465D023641DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D317B7A09BDAEFF8DB53D8 /* Pods-HYDateTools_Example.debug.xcconfig */,
+				609B60DC8C1E08A120C26530 /* Pods-HYDateTools_Example.release.xcconfig */,
+				0A64A8E74BA230FD1B84E5D5 /* Pods-HYDateTools_Example-HYDateTools_Tests.debug.xcconfig */,
+				005D482BE336E32E7E6F7A8C /* Pods-HYDateTools_Example-HYDateTools_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +112,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				734E66249DC0C597021EB485 /* Pods */,
+				4943EE8B8EA4465D023641DB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				EA3E52DC5DBF383963B05BE1 /* Pods_HYDateTools_Example.framework */,
-				402CD2DDDBC6D34F24F21F71 /* Pods_HYDateTools_Tests.framework */,
+				02779A275D3199C32C10A9A8 /* Pods_HYDateTools_Example.framework */,
+				5ECCD74B361AEDF5F73B850A /* Pods_HYDateTools_Example_HYDateTools_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,17 +193,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		734E66249DC0C597021EB485 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				77EA8F372EE6BE5EC3B99236 /* Pods-HYDateTools_Example.debug.xcconfig */,
-				5C8F395EF8453AE43339D4B8 /* Pods-HYDateTools_Example.release.xcconfig */,
-				23FB1DB9030E936B8FA6E52F /* Pods-HYDateTools_Tests.debug.xcconfig */,
-				AD9382F7482CFA1BC46EE1C1 /* Pods-HYDateTools_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "HYDateTools_Example" */;
 			buildPhases = (
-				BF30A7D1D3810DBFAA909810 /* Check Pods Manifest.lock */,
+				284A228681B83317DD8EC868 /* 📦 Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				562DC1CF81154604525ABE57 /* Embed Pods Frameworks */,
-				BCC7D1738CDC1AFD25A46860 /* Copy Pods Resources */,
+				776E1B2650030793EBD5061D /* 📦 Embed Pods Frameworks */,
+				90A7F2457283EF8EDD943A2C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HYDateTools_Tests" */;
 			buildPhases = (
-				2673F8224D5551EB4707EE1C /* Check Pods Manifest.lock */,
+				423943A3D7893654B8EF1DC1 /* 📦 Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				DF57DDC381EFCA5451FB6CF4 /* Embed Pods Frameworks */,
-				4285526C802782670EE2355D /* Copy Pods Resources */,
+				7776016B89CAFCB900050488 /* 📦 Embed Pods Frameworks */,
+				29E5BB572A7E27DD36943709 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,14 +293,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2673F8224D5551EB4707EE1C /* Check Pods Manifest.lock */ = {
+		284A228681B83317DD8EC868 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,29 +308,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4285526C802782670EE2355D /* Copy Pods Resources */ = {
+		29E5BB572A7E27DD36943709 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Tests/Pods-HYDateTools_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Example-HYDateTools_Tests/Pods-HYDateTools_Example-HYDateTools_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		562DC1CF81154604525ABE57 /* Embed Pods Frameworks */ = {
+		423943A3D7893654B8EF1DC1 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		776E1B2650030793EBD5061D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,49 +353,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCC7D1738CDC1AFD25A46860 /* Copy Pods Resources */ = {
+		7776016B89CAFCB900050488 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Example-HYDateTools_Tests/Pods-HYDateTools_Example-HYDateTools_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90A7F2457283EF8EDD943A2C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Example/Pods-HYDateTools_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF30A7D1D3810DBFAA909810 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DF57DDC381EFCA5451FB6CF4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HYDateTools_Tests/Pods-HYDateTools_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -509,7 +509,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77EA8F372EE6BE5EC3B99236 /* Pods-HYDateTools_Example.debug.xcconfig */;
+			baseConfigurationReference = 15D317B7A09BDAEFF8DB53D8 /* Pods-HYDateTools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,7 +525,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C8F395EF8453AE43339D4B8 /* Pods-HYDateTools_Example.release.xcconfig */;
+			baseConfigurationReference = 609B60DC8C1E08A120C26530 /* Pods-HYDateTools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -541,7 +541,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23FB1DB9030E936B8FA6E52F /* Pods-HYDateTools_Tests.debug.xcconfig */;
+			baseConfigurationReference = 0A64A8E74BA230FD1B84E5D5 /* Pods-HYDateTools_Example-HYDateTools_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -565,7 +565,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD9382F7482CFA1BC46EE1C1 /* Pods-HYDateTools_Tests.release.xcconfig */;
+			baseConfigurationReference = 005D482BE336E32E7E6F7A8C /* Pods-HYDateTools_Example-HYDateTools_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -12,7 +12,7 @@
 #define NSStringFromFloat(format, floatValue) [NSString stringWithFormat:format, floatValue]
 
 #define NSStringFromTimestamp(timeinterval, format) [NSString hy_stringFromTimeinterval:timeinterval withFormat:format]
-#define NSStringFromDate(date, format) [NSString stringFromDate:date withFormat:format]
+#define NSStringFromDate(date, format) [NSString hy_stringFromDate:date withFormat:format]
 //#define NSIntegerFromDateString(dateString, format) [NSString timeStampFromString:dateString withFormat:format]
 
 @interface NSString (HY)

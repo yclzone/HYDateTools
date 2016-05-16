@@ -52,7 +52,7 @@
     NSDate *newDate = [date hy_nextDay];
     NSLog(@"%@", newDate.hy_dateString);
     newDate = [newDate hy_nextMonth];
-    NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
+    NSLog(@"%@", NSStringFromDate(newDate, @"yyyy-MM-dd"));
     newDate = [newDate hy_nextYear];
     NSLog(@"%@", [NSString hy_stringFromDate:newDate withFormat:@"yyyy-MM-dd"]);
     newDate = [newDate hy_previousDay];
