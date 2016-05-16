@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HYDateTools"
-  s.version          = "0.5.2"
+  s.version          = "0.5.3"
   s.summary          = "HYDateTools is collection set of common used methods of NSDate and NSString that convert between date, date string and timeinterval."
 
 # This description is used to generate tags and improve search results.
